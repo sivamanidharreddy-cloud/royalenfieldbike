@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="https://www.royalenfield.com/mx/en/home.html/">
+            <img src="https://images.seeklogo.com/logo-png/36/2/royal-enfield-logo-png_seeklogo-361484.png" class="navbar-image" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="#">
+                    Home <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="#https://www.royalenfield.com/mx/en/home.html/">Our platform</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <div id="sectionhome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="bike-card">
+                <h1 class="main-heading">Bikes</h1>
+                <p class="paragraph">Plan your trip</p>
+                <button class="button" onclick="display('sectionFavoritebikes')">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAVORITE BIKES SECTION -->
+    <div id="sectionFavoritebikes">
+        <div class="favourite-bike-bg-container">
+
+            <h1 class="favourite-bike-heading">Royal Enfield</h1>
+
+            <!-- CLASSIC 350 -->
+            <div class="favourite-bike-card-container d-flex flex-row" onclick="display('sectionmodelview')">
+                <div>
+                    <h1 class="favourite-bike-card-heading">Classic 350</h1>
+                    <p class="favourite-bike-card-description">
+                        Royal Enfield is an Indian motorcycle brand, originally established in England.
+                        Retro-modern aesthetic: Royal Enfield combines classic looks with modern touches, such as the Bullet 650's peashooter exhausts and iconic casquette headlamp, which now features LEDs.
+                        Upgraded controls and dashboard: Many new models feature premium controls, including adjustable levers and polished aluminum switchgear. Dashboards are modernizing, often blending analog and digital readouts with functions like gear position, fuel, and service reminders.
+                        Comfort and ergonomics: Focus is placed on rider comfort with features like low seat heights, upright riding positions, and well-designed handlebars and footrests, which contribute to an effortless and confident ride.
+                    </p>
+                </div>
+                <img src="https://apnamechanic.com/blog/wp-content/uploads/2022/06/bullet-service-online-1024x683-1.jpg" class="favourite-bike-card-image" />
+            </div>
+
+            <!-- HUNTER -->
+            <div class="favourite-bike-card-container d-flex flex-row" onclick="display('sectionmodel1view')">
+                <div>
+                    <h1 class="favourite-bike-card-heading">Hunter 350</h1>
+                    <p class="favourite-bike-card-description">
+                        The Royal Enfield Hunter 350 is a modern, neo-retro roadster...
+                    </p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgtTpK9FAzzW5MlaefhWdHS096hCZH5gpQMQ&s" class="favourite-bike-card-image" />
+            </div>
+
+            <!-- HIMALAYAN -->
+            <div class="favourite-bike-card-container d-flex flex-row" onclick="display('sectionmodel2view')">
+                <div>
+                    <h1 class="favourite-bike-card-heading">Himalayan 450</h1>
+                    <p class="favourite-bike-card-description">
+                        The Royal Enfield Himalayan is a versatile adventure-touring motorcycle.
+                    </p>
+                </div>
+                <img src="https://5.imimg.com/data5/MF/KW/MY-11172426/royal-enfield-himalayan.png" class="favourite-bike-card-image" />
+            </div>
+
+            <!-- GT 650 -->
+            <div class="favourite-bike-card-container d-flex flex-row" onclick="display('sectionmodel3view')">
+                <div>
+                    <h1 class="favourite-bike-card-heading">GT 650</h1>
+                    <p class="favourite-bike-card-description">
+                        The Royal Enfield Continental GT 650 is a retro-style motorcycle.
+                    </p>
+                </div>
+                <img src="https://cdn-s3.autocarindia.com/RoyalEnfield/Continental-GT-650/_AAB9363.JPG?w=728&q=75" class="favourite-bike-card-image" />
+            </div>
+
+        </div>
+    </div>
+
+    <!-- DETAILED VIEW CLASSIC 350 -->
+    <div id="sectionmodelview">
+        <div class="detailed-view-bg-container">
+
+            <h1 class="detailed-view-heading">Detailed View</h1>
+
+            <div class="detailed-view-card-container">
+
+                <!-- CAROUSEL -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.pexels.com/photos/17266142/pexels-photo-17266142/free-photo-of-royal-enfield-himalayan-motorbike.jpeg" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.financialexpressdigital.com/2022/11/Himalayan-new-colour-brown.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://imgd.aeplcdn.com/476x268/bw/models/royal-enfield-classic-350-single-channel-abs--bs-vi20200303121804.jpg" />
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+                <!-- TEXT SECTION -->
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Classic 350</h1>
+
+                    <p class="detailed-view-card-description">
+                        The Royal Enfield Classic 350 is a retro-styled motorcycle known for its timeless design...
+                    </p>
+
+                    <button class="button btn btn-dark" onclick="display('sectionhome')">Homescreen</button>
+                    <button class="button" onclick="display('sectionFavoritebikes')">Fav models</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- DETAILED VIEW HUNTER -->
+    <div id="sectionmodel1view">
+        <div class="detailed-view-bg-container">
+
+            <h1 class="detailed-view-heading">Detailed View</h1>
+
+            <div class="detailed-view-card-container">
+
+
+                <div id="goldenTempleCarousel" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://cdn.bikedekho.com/upload/standoutfeatures/65e6ec8173c8f.jpg" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://etimg.etb2bimg.com/photo/102103555.cms" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.wheelsbingo.com/images/web-img/bikes/bike_images/royal-enfield-hunter-350.webp" class="d-block w-100" />
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#goldenTempleCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#goldenTempleCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Hunter 350</h1>
+
+                    <p class="detailed-view-card-description">
+                        The Royal Enfield Hunter 350 is a modern, neo-retro street motorcycle.
+                        Engine: 349.34cc J-series engine with 20.2 bhp and 27 Nm of torque, known for being smooth and characterful.
+                        Handling: Light and agile, making it easy to maneuver in traffic and city environments.
+                        Chassis: Twin downtube spine frame with a wheelbase of 1370 mm.
+                        Brakes and safety: Dual-channel ABS is standard on higher variants, with a 300mm front disc and a 270mm rear disc.
+                        Suspension: Upgraded for 2025 with more absorbent rear suspension (twin shock absorbers with 6-step adjustable preload) and 41mm front forks.
+                        Weight: 181 kg (kerb weight).
+                        Fuel capacity: 13 liters.
+                        Lighting: LED headlights and taillights are available on mid and top variants.
+                        Connectivity: Mid and top variants include a USB Type-C fast charging port and a Tripper navigation pod.
+                    </p>
+
+                    <button class="button btn btn-dark" onclick="display('sectionhome')">Homescreen</button>
+                    <button class="button" onclick="display('sectionFavoritebikes')">Fav models</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="sectionmodel2view">
+        <div class="detailed-view-bg-container">
+
+            <h1 class="detailed-view-heading">Detailed View</h1>
+
+            <div class="detailed-view-card-container">
+
+                <!-- CAROUSEL -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://imgd.aeplcdn.com/476x268/bw/models/royal-enfield-classic-350-single-channel-abs--bs-vi20200303121804.jpg" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://imgd.aeplcdn.com/476x268/bw/models/royal-enfield-classic-350-single-channel-abs--bs-vi20200303121804.jpg" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://imgd.aeplcdn.com/476x268/bw/models/royal-enfield-classic-350-single-channel-abs--bs-vi20200303121804.jpg" />
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+                <!-- TEXT SECTION -->
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Himalayan 450</h1>
+
+                    <p class="detailed-view-card-description">
+                        The Royal Enfield Himalayan is a retro-styled motorcycle known for its trecking design.
+                        Engine: 452cc liquid-cooled, single-cylinder engine, named the Sherpa 450.
+                        Power and torque: 40 bhp at 8,000 rpm and 40 Nm at 5,500 rpm.
+                        Transmission: 6-speed gearbox with an assist and slipper clutch.
+                        Ride-by-wire: Features four riding modes (performance and eco with ABS on or off) for adjustable performance.
+                        Fueling: Provides smooth fueling, but some reviewers feel it prefers to be revved rather than lugged in a lower gear.
+                    </p>
+
+                    <button class="button btn btn-dark" onclick="display('sectionhome')">Homescreen</button>
+                    <button class="button" onclick="display('sectionFavoritebikes')">Fav models</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="sectionmodel3view">
+        <div class="detailed-view-bg-container">
+
+            <h1 class="detailed-view-heading">Detailed View</h1>
+
+            <div class="detailed-view-card-container">
+
+                <!-- CAROUSEL -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/49656/continental-gt-right-side-view-12.png?isig=0&q=80" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/49656/continental-gt-right-front-three-quarter-6.jpeg?isig=0&q=80" class="d-block w-100" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn-s3.autocarindia.com/RoyalEnfield/Continental-GT-650/_AAB9334.JPG?w=640&q=75" />
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+                <!-- TEXT SECTION -->
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">GT 650</h1>
+
+                    <p class="detailed-view-card-description">
+                        The Royal Enfield gt 650 is a retro-styled motorcycle known for its cool design.
+                        Engine: 648cc air-cooled parallel-twin engine.Power: \(47.65\) PS at \(7250\) rpm.Torque: \(52.3\) Nm.Transmission: 6-speed gearbox with a slipper clutch.Fuel efficiency: Around \(27\) kmpl.
+                    </p>
+
+                    <button class="button btn btn-dark" onclick="display('sectionhome')">Homescreen</button>
+                    <button class="button" onclick="display('sectionFavoritebikes')">Fav models</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+
+</html>
